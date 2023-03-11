@@ -49,9 +49,13 @@ public class persona {
     }
 
     public double calcularImc (){
-        /*pesoActual=peso/estatura*estatura;*/
         pesoActual=peso/(estatura*estatura);
-        /*if (pesoActual<20) {
+            return pesoActual;
+        
+    }
+    public void Imc (){
+        pesoActual=peso/(estatura*estatura);
+        if (pesoActual<20) {
             System.out.println("su peso esta por debajo de lo ideal");
             System.out.println(pesoActual);
 
@@ -66,10 +70,9 @@ public class persona {
         }
         else{
             System.out.println("error 405");
-            */
-            return pesoActual;
-        
     }
+    }
+
     public void validaEdad(){
         if(edad>=18){System.out.println("usted es mayor de edad");}
         else{
